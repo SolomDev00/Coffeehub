@@ -1,0 +1,28 @@
+---
+import '../styles/index.css'
+
+interface Props {
+	title: string;
+	description?: string;
+	imageURL?: string;
+}
+
+const { title, description = "Hello 4 everyone! I'm Building with Astro, Typescipt and Tailwindcss", imageURL } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:image" content={imageURL} />
+		<title>{title}</title>
+		
+	</head>
+	<body class="min-h-screen">
+		<slot />
+	</body>
+</html>
