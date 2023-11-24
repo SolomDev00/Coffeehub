@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cart {
+  position: absolute;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+  background-color: #ddb892;
+  color: #7f5539;
+  top: 0px;
+  right: -9px;
+  font-size: 8px;
+}
+
+.buttonHover:hover {
+  color: #fff !important;
+  background-color: #b08968 !important;
+}
+
+.text-sxl {
+  font-size: 3.5rem;
+  line-height: 1;
+}

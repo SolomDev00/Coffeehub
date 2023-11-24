@@ -7,7 +7,7 @@ interface Props {
 	imageURL?: string;
 }
 
-const { title, description = "Hello 4 everyone! I'm Building with Astro, Typescipt and Tailwindcss", imageURL } = Astro.props;
+const { title, description = "CoffeeHub for shopping any coffee!", imageURL = "../assets/icon.svg" } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,7 +22,7 @@ const { title, description = "Hello 4 everyone! I'm Building with Astro, Typesci
 		<title>{title}</title>
 		
 	</head>
-	<body class="min-h-screen">
+	<body class="min-h-screen w-full container">
 		<slot />
 	</body>
 </html>

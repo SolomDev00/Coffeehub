@@ -1,0 +1,13 @@
+---
+
+interface Props {
+    color: string;
+    title: string;
+    bgColor?: string;
+}
+
+const { color, title, bgColor} = Astro.props;
+
+---
+
+<button style={{ backgroundColor: `${bgColor}`, color: `${color}` }} class="buttonHover px-2 py-1 text-sm font-light rounded-md duration-500">{title}</button>

@@ -1,0 +1,36 @@
+---
+import Button from './schema/Button.astro'
+---
+
+<nav class="w-full flex flex-row justify-between py-5 items-center">
+	<div class="flex flex-row justify-between items-center">
+		<img src="/favicon.svg" alt="logo" class="w-7 cursor-pointer" />
+		<h2 class="text-xl font-medium text-[#7f5539]">Coffee<span class="text-[#b08968]">Hub</span></h2>
+	</div>
+	<div class="w-[30%]">
+		<ul class="flex flex-row justify-between items-center">
+			<li class="text-base font-medium">
+				<a href="/" class="text-[#7f5539]">Home</a>
+			</li>
+			<li class="text-base font-medium">
+				<a href="/store" class="text-[#b08968]">Store</a>
+			</li>
+			<li class="text-base font-medium">
+				<a href="/about" class="text-[#b08968]">About</a>
+			</li>
+			<li class="text-base font-medium">
+				<a href="/support" class="text-[#b08968]">Support</a>
+			</li>
+		</ul>
+	</div>
+	<div class="flex flex-row justify-between items-center w-[19%] gap-1">
+		<div class="space-x-1">
+			<Button title='Register' bgColor='transparent' color="#876045"/>
+			<Button title='Login' bgColor='#7f5539' color="#ffffff"/>
+		</div>
+		<div class="relative">
+			<img src="/assets/bag.svg" alt="cart" class="w-5 cursor-pointer" />
+			<div class="cart">1</div>
+		</div>
+	</div>
+</nav>
