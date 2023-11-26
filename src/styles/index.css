@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -34,3 +39,38 @@
   font-size: 3.5rem;
   line-height: 1;
 }
+
+.whySection {
+  width: 100% !important;
+}
+
+.waveR {
+  rotate: 180deg;
+}
+
+.whyContainer {
+  height: 40%;
+  background-color: #f2e9e0;
+  padding: 0 4%;
+}
+
+/* mark::after {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 12px;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-45px);
+  -ms-transform: translate(-45px);
+  transform: translate(-45px);
+  background-color: red;
+  -webkit-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-image: url(assets/headline-curve.svg);
+  mask-image: url(assets/headline-curve.svg);
+} */

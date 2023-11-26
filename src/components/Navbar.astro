@@ -4,22 +4,22 @@ import Button from './schema/Button.astro'
 
 <nav class="w-full flex flex-row justify-between py-5 items-center">
 	<div class="flex flex-row justify-between items-center">
-		<img src="/favicon.svg" alt="logo" class="w-7 cursor-pointer" />
+		<img src="/favicon.svg" alt="logo" class="w-7 cursor-pointer" data-aos="fade-right" />
 		<h2 class="text-xl font-medium text-[#7f5539]">Coffee<span class="text-[#b08968]">Hub</span></h2>
 	</div>
 	<div class="w-[30%]">
 		<ul class="flex flex-row justify-between items-center">
 			<li class="text-base font-medium">
-				<a href="/" class="text-[#7f5539]">Home</a>
+				<a href="#" class="text-[#7f5539] hover:text-[#b08968] duration-500">Home</a>
 			</li>
 			<li class="text-base font-medium">
-				<a href="/store" class="text-[#b08968]">Store</a>
+				<a href="#store" class="text-[#b08968] hover:text-[#7f5539] duration-500">Store</a>
 			</li>
 			<li class="text-base font-medium">
-				<a href="/about" class="text-[#b08968]">About</a>
+				<a href="#about" class="text-[#b08968] hover:text-[#7f5539] duration-500">About</a>
 			</li>
 			<li class="text-base font-medium">
-				<a href="/support" class="text-[#b08968]">Support</a>
+				<a href="#contact" class="text-[#b08968] hover:text-[#7f5539] duration-500">Support</a>
 			</li>
 		</ul>
 	</div>
@@ -29,8 +29,8 @@ import Button from './schema/Button.astro'
 			<Button title='Login' bgColor='#7f5539' color="#ffffff"/>
 		</div>
 		<div class="relative">
-			<img src="/assets/bag.svg" alt="cart" class="w-5 cursor-pointer" />
-			<div class="cart">1</div>
+			<img src="/assets/bag.svg" alt="cart" class="w-5 cursor-pointer" data-aos="fade-left" />
+			<div class="cart" data-aos="fade-left" data-aos-duration="900">3</div>
 		</div>
 	</div>
 </nav>

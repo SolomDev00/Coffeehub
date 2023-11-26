@@ -1,10 +1,20 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
+import Contact from './Contact.astro';
 import Home from './Home.astro';
+import ListProducts from './ListProducts.astro';
+import Why from './Why.astro'
 ---
 
-<Layout title="CoffeeHub Website!">
-	<Navbar />
-	<Home />
+<Layout title="CoffeeHub Website">
+	<div class="container">
+		<Navbar />
+		<Home />
+	</div>
+	<Why />
+	<div class="container">
+		<ListProducts />
+		<Contact />
+	</div>
 </Layout>

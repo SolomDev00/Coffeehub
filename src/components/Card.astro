@@ -1,0 +1,17 @@
+---
+import Button from "../components/schema/Button.astro";
+import { data } from "../data";
+---
+
+{data.map((item) => (
+  <div id={item.id} class="w-[285px] h-[250px] flex flex-row justify-between items-center" data-aos="zoom-out-up">
+    <img class="w-[150px]" src={`${item.imageURL}`} alt={item.title}/>
+    <div class="h-[45%] flex flex-col justify-between">
+      <div>
+        <h3 class="text-[#7f5539] text-lg">{item.title}</h3>
+        <p class="text-[#b08968] text-base">{item.price}</p>
+      </div>
+      <Button title="Add to Cart" bgColor='#7f5539' color="#ffffff" />
+    </div>
+  </div>
+))}
